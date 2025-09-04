@@ -1,6 +1,6 @@
-# FastAPI Hello World
+# FastHTML Hello World
 
-A minimal FastAPI app that returns a JSON "Hello, World!" response.
+A minimal FastHTML app that renders an HTML "Hello, World!" page.
 
 ## Run locally
 
@@ -8,8 +8,8 @@ A minimal FastAPI app that returns a JSON "Hello, World!" response.
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+python main.py
 ```
 
-- The app will start at `http://127.0.0.1:8000/`.
-- Try `GET /` for the hello message and `GET /health` for a simple health check.
+- The server will start and print the URL (typically `http://127.0.0.1:5001`).
+- Visit `/` to see the Hello World page.
