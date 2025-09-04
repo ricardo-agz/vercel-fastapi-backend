@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "main.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+        { "src": "/favicon.ico", "dest": "/static/favicon.ico" },
+        { "src": "/static/(.*)", "dest": "/static/$1" },
+        { "src": "/(.*)", "dest": "/main.py" }
+    ]
+}
