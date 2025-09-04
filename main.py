@@ -4,12 +4,12 @@ from fastapi.responses import FileResponse, HTMLResponse
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/public", StaticFiles(directory="public"), name="public")
 
 
 @app.get("/favicon.ico", include_in_schema=False)
 async def favicon():
-    return FileResponse("static/favicon.ico")
+    return FileResponse("public/favicon.ico")
 
 
 @app.get("/", response_class=HTMLResponse)

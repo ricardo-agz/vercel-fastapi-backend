@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "builds": [{ "src": "main.py", "use": "@vercel/python" }],
-    "functions": { "main.py": { "includeFiles": "public/**" } },
+    "builds": [{ "src": "main.py", "use": "@vercel/python", "includeFiles": "public/**" }],
     "routes": [{ "src": "/(.*)", "dest": "/main.py" }]
 }
