@@ -9,7 +9,7 @@ app.mount("/public", StaticFiles(directory="public"), name="public")
 
 @app.get("/favicon.ico", include_in_schema=False)
 async def favicon():
-    return FileResponse("public/favicon.ico")
+    return FileResponse("public/vercel.svg")
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -19,7 +19,7 @@ def read_root():
     <html>
     <head>
         <title>Vercel + FastAPI</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/vercel.svg">
     </head>
     <body>
         <h1>Vercel + FastAPI</h1>
