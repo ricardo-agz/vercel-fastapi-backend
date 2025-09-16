@@ -1,6 +1,6 @@
-# FastHTML Hello World
+# FastAPI Hello World
 
-A minimal FastHTML app that renders an HTML "Hello, World!" page.
+A minimal FastAPI app that renders an HTML "Hello, World!" page.
 
 ## Run locally
 
@@ -11,5 +11,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-- The server will start and print the URL (typically `http://127.0.0.1:5001`).
-- Visit `/` to see the Hello World page.
+Visit `http://127.0.0.1:5001`
