@@ -19,7 +19,8 @@ def read_root():
     <html>
     <head>
         <title>Vercel + FastAPI</title>
-        <link rel="icon" type="image/x-icon" href="/vercel.svg">
+        <link rel="icon" type="image/x-icon" href="/public/vercel.svg">
+        
     </head>
     <body>
         <h1>Vercel + FastAPI</h1>
